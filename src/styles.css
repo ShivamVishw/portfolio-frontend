@@ -1,1 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background:#f8fafc;
+}
+
+section{
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+h1{
+    font-weight:700;
+}
+
+.card{  
+    border:none;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.navbar{
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+.project-card{
+    transition:0.4s;
+}
+
+.project-card:hover{
+    transform: translateY(-10px) scale(1.02);
+}
+
+.card-img-top{
+    height:220px;
+    object-fit:cover;
+}
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #0d6efd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-content {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #0d6efd;
+    border-radius: 50%;
+    top: 30px;
+    right: -9px;
+}
+
+.timeline-item:nth-child(even)::after {
+    left: -9px;
+}
+
+@media(max-width:768px){
+
+    .timeline::after{
+        left:20px;
+    }
+
+    .timeline-item{
+        width:100%;
+        padding-left:60px;
+        padding-right:10px;
+    }
+
+    .timeline-item:nth-child(even){
+        left:0;
+    }
+
+    .timeline-item::after{
+        left:11px;
+    }
+}

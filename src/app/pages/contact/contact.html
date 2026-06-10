@@ -1,0 +1,175 @@
+<section class="contact-section py-5">
+    <div class="container">
+  
+      <h2 class="text-center mb-5">Contact Me</h2>
+  
+      <div class="row">
+
+        <p class="text-muted text-center mb-5">
+            I am open to Java Backend Developer, Spring Boot Developer
+            and Full Stack Developer opportunities.
+            Feel free to reach out for collaboration or hiring discussions.
+            </p>
+  
+        <!-- Contact Form -->
+        <div class="col-lg-7 mb-4">
+  
+          <div class="contact-card">
+  
+            <h4 class="mb-4">Send Message</h4>
+  
+            <form #contactForm="ngForm"
+                (ngSubmit)="sendMessage(contactForm)">
+  
+  <div class="mb-3">
+    <label class="form-label">Full Name</label>
+  
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="contactData.name"
+      name="name"
+      #name="ngModel"
+      required
+      minlength="3">
+  
+    @if(name.invalid && name.touched){
+      <small class="text-danger">
+        Name must be at least 3 characters
+      </small>
+    }
+  
+  </div>
+  
+  <div class="mb-3">
+
+    <label class="form-label">Email Address</label>
+  
+    <input
+      type="email"
+      class="form-control"
+      [(ngModel)]="contactData.email"
+      name="email"
+      #email="ngModel"
+      required
+      email>
+  
+    @if(email.invalid && email.touched){
+      <small class="text-danger">
+        Enter a valid email address
+      </small>
+    }
+  
+  </div>
+  
+  <div class="mb-3">
+
+    <label class="form-label">Subject</label>
+  
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="contactData.subject"
+      name="subject"
+      #subject="ngModel"
+      required>
+  
+    @if(subject.invalid && subject.touched){
+      <small class="text-danger">
+        Subject is required
+      </small>
+    }
+  
+  </div>
+  
+  <div class="mb-3">
+
+    <label class="form-label">Message</label>
+  
+    <textarea
+      class="form-control"
+      rows="5"
+      [(ngModel)]="contactData.message"
+      name="message"
+      #message="ngModel"
+      required
+      minlength="10">
+    </textarea>
+  
+    @if(message.invalid && message.touched){
+      <small class="text-danger">
+        Message must contain at least 10 characters
+      </small>
+    }
+  
+  </div>    
+  
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                    [disabled]="contactForm.invalid || isLoading">
+
+                    {{ isLoading ? 'Sending...' : 'Send Message' }}
+
+                </button>
+  
+            </form>
+  
+          </div>
+  
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="col-lg-5">
+  
+          <div class="contact-card">
+  
+            <h4 class="mb-4">Contact Information</h4>
+  
+            <div class="info-item">
+              <h6>📧 Email</h6>
+                <p>
+                <a href="mailto:shivamvishwakarma1432@gmail.com">
+                    shivamvishwakarma1432@gmail.com
+                </a>
+            
+                </p>
+            </div>
+  
+            <div class="info-item">
+              <h6>📍 Location</h6>
+              <p>Mumbai, Maharashtra, India</p>
+            </div>
+  
+            <div class="info-item">
+              <h6>💼 LinkedIn</h6>
+              <p>
+                <a
+                    href="https://www.linkedin.com/in/shivam-vishwakarma-b981b3206/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View Profile
+                </a>
+              </p>
+            </div>
+  
+            <div class="info-item">
+              <h6>💻 GitHub</h6>
+              <p>
+                <a
+                 href="https://github.com/ShivamVishw"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                 View Projects
+                </a>
+              </p>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
