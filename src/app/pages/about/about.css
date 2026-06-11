@@ -1,0 +1,176 @@
+.about-hero {
+    padding: 80px 0;
+}
+
+.about-badge {
+    background: #dbeafe;
+    color: #2563eb;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.about-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.about-subtitle {
+    color: #2563eb;
+    font-size: 1.2rem;
+}
+
+.about-card {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    margin-top: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+}
+
+.about-image {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 15px 40px rgba(37,99,235,.25);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-12px);
+    }
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.highlight-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.highlight-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(37,99,235,.2);
+}
+
+.highlight-card h3 {
+    color: #2563eb;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #2563eb;
+}
+
+.timeline-item {
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+
+.timeline-content {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    height: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border: 2px solid #2563eb;
+}
+
+@media(max-width:768px){
+
+    .about-title{
+        font-size:2.5rem;
+    }
+
+    .about-image{
+        width:220px;
+        height:220px;
+        margin-bottom:30px;
+    }
+
+}
+.education-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    height:100%;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.education-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(37,99,235,.18);
+}
+
+.edu-icon{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.education-card h4{
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.education-card span{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 16px;
+    background:#dbeafe;
+    color:#2563eb;
+    border-radius:30px;
+    font-weight:600;
+}

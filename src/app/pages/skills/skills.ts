@@ -26,13 +26,30 @@ export class Skills {
     ],
     database: [
       'MySQL',
-      'MsSQL',
-      'MongoDB'
+      'SQL',
+      'Database Design',
+      'Query Optimization'
     ],
     tools: [
       'Git',
       'GitHub',
-      'Postman'
+      'Postman',
+      'VS Code',
+      'IntelliJ IDEA',
+      'STS',
+      'Maven',
+      'Gradle'
+    ],
+    apis: [
+      'MVC',
+      'DTO',
+      'Validation',
+      'Pagination',
+      'Authentication',
+      'Authorization',
+      'CORS',
+      'REST Design'
     ]
+
   };
 }

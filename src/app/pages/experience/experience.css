@@ -1,0 +1,181 @@
+.timeline {
+
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+
+}
+
+.timeline::before {
+
+    content: '';
+    position: absolute;
+
+    left: 30px;
+    top: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: linear-gradient(
+        to bottom,
+        #2563eb,
+        #60a5fa
+    );
+
+    border-radius: 10px;
+}
+
+.timeline-item {
+
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 80px;
+}
+/* 
+.timeline-item::before {
+
+    content: '';
+
+    position: absolute;
+
+    left: 18px;
+    top: 25px;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    border: 5px solid #ffffff;
+
+    box-shadow: 0 0 0 5px rgba(37,99,235,.15);
+} */
+
+.timeline-content {
+
+
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    transition: all .3s ease;
+
+    border-left: 5px solid #2563eb;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.08);
+}
+
+.timeline-content:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 40px rgba(37,99,235,.18);
+}
+
+.timeline-content h4 {
+
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.timeline-content h6 {
+
+    font-weight: 600;
+}
+
+.timeline-content ul {
+
+    margin-top: 15px;
+    padding-left: 18px;
+}
+
+.timeline-content li {
+
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.timeline-content small {
+
+    display: inline-block;
+
+    margin-top: 5px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-weight: 600;
+}
+
+section h2 {
+
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+
+.timeline::before {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .timeline {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .timeline::before {
+        display: none !important;
+    }
+
+    .timeline-item {
+        padding-left: 0 !important;
+        margin-bottom: 20px !important;
+        width: 100%;
+    }
+
+    .timeline-item::before {
+        display: none !important;
+    }
+
+    .timeline-content {
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        display: block;
+
+        padding: 20px;
+
+        border-left: 4px solid #2563eb;
+    }
+
+    .timeline-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .timeline-content li {
+        font-size: 0.95rem;
+    }
+}
