@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class Contact {
 
-  private apiUrl = 'http://localhost:8080/api/contact';
+  private apiUrl = 'https://portfolio-backend-production-b385.up.railway.app/api/contact';
 
   constructor(private http: HttpClient) {}
 
