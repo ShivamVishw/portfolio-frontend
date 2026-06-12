@@ -22,7 +22,7 @@ export class AdminLogin {
   login() {
 
     this.http.post<any>(
-      'http://localhost:8080/api/auth/login',
+      'https://portfolio-backend-production-b385.up.railway.app/api/auth/login',
       {
         email: this.email,
         password: this.password
